@@ -1,0 +1,41 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "UERM Employee Portal V2 REST API",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix front-end",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Joshua C. Magoliman, Omar Shaid",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.5",
+    "body-parser": "~1.0.1",
+    "bootstrap": "^5.2.3",
+    "colors": "^1.4.0",
+    "cors": "2.8.1",
+    "date-fns": "^3.3.1",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "fs-extra": "^11.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "md5": "^2.3.0",
+    "morgan": "^1.10.0",
+    "mssql": "^9.1.1",
+    "multer": "^1.4.2",
+    "path": "^0.12.7",
+    "pdf2image": "^1.2.3",
+    "puppeteer": "^21.7.0",
+    "redis": "^4.6.12"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  }
+}
